@@ -1,30 +1,29 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/category",
-    "pages/goods_list/goods_list",
-    "pages/goods_detail/goods_detail",
-    "pages/cart/cart",
-    "pages/collect/collect",
-    "pages/ order/ order",
-    "pages/ user/ user",
-    "pages/ search/ search",
-    "pages/ login/ login",
-    "pages/ auth/ auth",
-    "pages/ pay/ pay"
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "黑马优购",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "琦玉商城",
     "navigationBarTextStyle": "white"
-
   },
   "tabBar": {
-    "color": "#333",
-    "selectedColor": "#d4237a",
-    "backgroundColor": "#fff",
-    "position": "bottom",
+    "color": "#666",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
     "borderStyle": "black",
     "list": [
       {
@@ -34,26 +33,24 @@
         "selectedIconPath": "icons/_home.png"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/category/index",
         "text": "分类",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/_home.png"
+        "iconPath": "icons/fenlei.png",
+        "selectedIconPath": "icons/_fenlei.png"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/cart/index",
         "text": "购物车",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/_home.png"
+        "iconPath": "icons/shop.png",
+        "selectedIconPath": "icons/_shop.png"
       },
       {
-        "pagePath": "pages/category/category",
+        "pagePath": "pages/user/index",
         "text": "我的",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/_home.png"
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/_my.png"
       }
     ]
   },
-  
-    
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap52.json"
 }

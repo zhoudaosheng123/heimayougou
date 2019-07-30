@@ -1,0 +1,47 @@
+/* pages/category/category.wxss */
+.goodsList {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.goodsList .leftMenuList {
+  flex: 1;
+}
+.goodsList .leftMenuList .navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.goodsList .leftMenuList .active {
+  color: var(--themColor);
+}
+.goodsList .rightGoodsList {
+  flex: 3;
+}
+.goodsList .rightGoodsList .rightAll .righthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.goodsList .rightGoodsList .rightAll .righthead .delimiter {
+  color: #ccc;
+}
+.goodsList .rightGoodsList .rightAll .righthead .delval {
+  font-size: 28rpx;
+  padding: 0rpx 8rpx;
+}
+.goodsList .rightGoodsList .rightAll .goodList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goodsList .rightGoodsList .rightAll .goodList .nav {
+  width: 33.3%;
+  text-align: center;
+}
+.goodsList .rightGoodsList .rightAll .goodList .nav .goodsicon {
+  width: 50%;
+}
+.goodsList .rightGoodsList .rightAll .goodList .nav .goodtext {
+  font-size: 30rpx;
+}

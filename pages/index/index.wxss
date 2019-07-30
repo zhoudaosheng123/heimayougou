@@ -1,1 +1,29 @@
 /* pages/index/index.wxss */
+.swiper_value swiper {
+  height: 340rpx;
+}
+.navList {
+  display: flex;
+}
+.navList navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.floor_item .item_title .floor_list {
+  padding: 20rpx;
+  overflow: hidden;
+}
+.floor_item .item_title .floor_list navigator {
+  width: 33.33%;
+  float: left;
+}
+.floor_item .item_title .floor_list navigator:nth-last-child(-n+4) {
+  height: 207.97413793rpx;
+  border-left: 10rpx solid #fff;
+}
+.floor_item .item_title .floor_list navigator:nth-last-child(-n+2) {
+  border-top: 10rpx solid #fff;
+}
+.floor_item .item_title .floor_list navigator image {
+  height: 100%;
+}

@@ -1,0 +1,53 @@
+<!--pages/category/category.wxml-->
+<searchInput></searchInput>
+
+
+  <view class="goodsList">
+   
+<scroll-view scroll-y class="leftMenuList">
+<view class="navList {{index===currentIndex?'active':''}}" 
+wx:for="{{leftMenuList}}"
+ wx:for-item="item"
+ wx:for-index="index"
+ wx:key="cat_id"
+ bindtap="handelChange"
+ data-set="{{index}}"
+>
+ {{item.cat_name}}
+</view>
+</scroll-view>
+<!--右边部分-->
+<scroll-view scroll-y  class="rightGoodsList">
+ <view class="rightAll"
+  wx:for="{{rightGoodsList}}"
+  wx:for-index="index1"
+  wx:for-item="item1"
+  wx:key="item"
+ >
+ <view class="righthead">
+   <text class="delimiter">//</text>
+   <text class="delval">{{item1.cat_name}}</text>
+   <text class="delimiter">//</text>
+ </view>
+
+<view class="goodList">
+ <navigator
+  wx:for="{{item1.children}}"
+  wx:for-item="item2"
+  wx:for-index="index2"
+  wx:key="cat_id"
+  class="nav"
+  >
+  <image mode="widthFix" class="goodsicon" src="{{item2.cat_icon}}"></image>
+   <view class="goodtext">{{item2.cat_name}}</view>   
+     
+ </navigator>
+ </view>
+
+ </view>
+</scroll-view>
+
+
+
+  </view>
+    

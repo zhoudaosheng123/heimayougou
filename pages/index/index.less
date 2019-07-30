@@ -1,0 +1,42 @@
+/* pages/index/index.wxss */
+
+.swiper_value swiper {
+  height: 340rpx;
+}
+
+.navList {
+  display: flex;
+
+  navigator {
+    flex: 1;
+    padding: 20rpx;
+  }
+}
+
+// 232*386
+//  原图的宽度/原图的高度 =  变化后的宽度/变化后的高度
+// 232px/386px=232px/3/??
+//  变化后的高度 = 圆度的高度*变化后的宽度/原图的宽度
+
+.floor_item{
+  .item_title{
+    .floor_list{
+      padding:20rpx;
+      overflow: hidden;
+      navigator{
+        width: 33.33%;
+         float: left; 
+       &:nth-last-child(-n+4){
+         height:750rpx/3*386/232/2;
+         border-left:10rpx solid #fff;
+       }
+       &:nth-last-child(-n+2){
+         border-top:10rpx solid #fff;
+       }
+       image{
+         height:100%;
+       }
+      }
+    }
+  }
+}
